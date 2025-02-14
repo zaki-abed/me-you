@@ -29,12 +29,13 @@ $(document).ready(function () {
         $('html, body').animate(
             { scrollTop: 0 },
             {
-                duration: 800,
-                easing: 'easeOutCubic', 
+                duration: 100,
+                easing: 'swing', // استخدم swing كبديل
             }
         );
     });
 });
+
 
 /* ------------------------------------------------ */
 /* 2. Mobile menu and language dropdown  */

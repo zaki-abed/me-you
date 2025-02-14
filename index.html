@@ -1,389 +1,400 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn to drive with Me & You Driving School in Milton Keynes! Intensive & semi-intensive lessons with a Government Approved Instructor (ADI). Book now!">
-    <meta name="keywords" content="driving lessons Milton Keynes, intensive driving course, semi-intensive driving lessons, driving school Milton Keynes, ADI driving instructor, best driving lessons, pay-as-you-go driving lessons, driving test preparation">
-    <meta name="author" content="Me & You Driving School">
-    <link rel="icon" href="images/logo.png" sizes="32x32"/>
-    <title>Me & You Driving School</title>
-    <!-- Normalize.css: Resets default browser styles for consistency -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- FontAwesome: Icon library for various UI elements -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Bootstrap: Grid framework and responsive utilities -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- AOS: Animate On Scroll library for scroll animations -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- intlTelInput: Library for international phone number input with country flags -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/css/intlTelInput.css">
-    <!-- Main Stylesheet: Main custom styles for the website -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <!-- intlTelInput: Library for international phone number input with country flags -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/css/intlTelInput.css">    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to drive with Me & You Driving School in Milton Keynes! Intensive & semi-intensive lessons with a Government Approved Instructor (ADI). Book now!">
+  <meta name="keywords" content="driving lessons Milton Keynes, intensive driving course, semi-intensive driving lessons, driving school Milton Keynes, ADI driving instructor, best driving lessons, pay-as-you-go driving lessons, driving test preparation">
+  <meta name="author" content="Me & You Driving School">
+  <link rel="icon" href="images/logo.png" sizes="32x32"/>
+  <title>Me & You Driving School</title>
+  
+  <!-- Normalize.css: Resets default browser styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- FontAwesome: Icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Bootstrap: Grid and responsive utilities -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- AOS: Animate On Scroll -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- intlTelInput: International phone input -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/css/intlTelInput.css">
+  <!-- Swiper: Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- GLightbox: Lightbox for images -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header" id="header">
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img src="images/logo.png" alt="Me & You Driving School">
-            </a>
-            <div class="mobile-menu">
-                <ul class="main-nav">
-                    <li><a href="index.html" class="nav-home active">Home</a></li>
-                    <li><a href="index.html#about" class="nav-about">About</a></li>
-                    <li><a href="index.html#services" class="nav-contact">Services</a></li>
-                    <li><a href="index.html#testimonial" class="nav-contact">Testimonial</a></li>
-                    <li><a href="index.html#contact" class="nav-contact">Contact us</a></li>
-                </ul>
-            </div>
-            <button class="btn-show-nav d-lg-none d-block">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
+  <!-- Header Section -->
+  <div class="header" id="header" data-aos="fade-down">
+    <div class="container">
+      <a class="logo" href="index.html" data-aos="fade-right">
+        <img src="images/logo.png" alt="Me & You Driving School">
+      </a>
+      <div class="mobile-menu" data-aos="fade-left">
+        <ul class="main-nav">
+          <li><a href="index.html" class="nav-home active">Home</a></li>
+          <li><a href="index.html#about" class="nav-about">About</a></li>
+          <li><a href="index.html#services" class="nav-contact">Services</a></li>
+          <li><a href="index.html#testimonial" class="nav-contact">Testimonial</a></li>
+          <li><a href="index.html#contact" class="nav-contact">Contact us</a></li>
+        </ul>
+      </div>
+      <button class="btn-show-nav d-lg-none d-block" data-aos="fade-up">
+        <i class="fa fa-bars"></i>
+      </button>
     </div>
-    <!-- /Header Section -->
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <!-- Right Side: Text Content -->
-            <div class="hero-text ">
-                <h1>Drive with Confidence with <span>Me & You</span> Driving School!</h1>
-                <p>
-                    Offering tailored driving lessons with a Government Approved Driving Instructor, 
-                    whether you need intensive courses or flexible ‘pay-as-you-go’ sessions to prepare for your test with ease.
-                </p>
-            </div>
-            <!-- Left Side: Image -->
-            <div class="hero-image">
-                <img src="images/hero.svg" alt="Me & You Driving School">
-            </div>
-        </div>
-    </section>
-    <!-- /Hero Section -->
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <!-- Left Side: Image -->
-            <div class="about-image">
-                <img src="images/about.svg" alt="About Me & You Driving School">
-            </div>
-            <!-- Right Side: Text Content -->
-            <div class="about-text">
-                <h2>About <span>Us</span></h2>
-                <p>
-                    Me & You Driving School offers both intensive and semi-intensive driving lessons in Milton Keynes 
-                    and the surrounding areas with a Government Approved Driving Instructor (ADI).
-                </p>
-                <p>
-                    I offer a range of driving courses and driving lesson packages to suit your individual needs at 
-                    highly competitive prices. Alternatively, you can also book driving lessons in Milton Keynes on a 
-                    ‘pay as you go’ basis, especially if you only need a few lessons before your driving test.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- /About Section -->
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <div class="container">
-            <!-- Left Side: Text Content -->
-            <div class="why-text">
-                <h2>Why Choose Us</h2>
-                <p class="intro">Trusted service, proven results, and unmatched expertise tailored to meet your needs.</p>
-                <div class="why-items-group">
-                    <div class="why-item">
-                        <div class="image-wrapper">
-                            <img src="images/why-choose-us/icon3.png" alt="Icon">
-                        </div>
-                        <div>
-                            <h3>Student-Centred Learning</h3>
-                            <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was.</p>
-                        </div>
-                    </div>
-                    <div class="why-item">
-                        <div class="image-wrapper">
-                            <img src="images/why-choose-us/icon2.png" alt="Icon">
-                        </div>
-                        <div>
-                            <h3>Approved Driving Instructor Lessons</h3>
-                            <p>As one of the few Government Approved Driving Instructors in Milton Keynes, you can be assured that your driving lessons with me will be both thorough and enjoyable.</p>
-                        </div>
-                    </div>
-                    <div class="why-item">
-                        <div class="image-wrapper">
-                            <img src="images/why-choose-us/icon1.png" alt="Icon">
-                        </div>
-                        <div>
-                            <h3>Flexibility</h3>
-                            <p>Unlike most other driving schools in Milton Keynes, I work around my pupils’ schedules in order to offer lessons at a time most convenient to them.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Right Side: Image Gallery -->
-            <div class="why-gallery">
-                <div class="column">
-                    <img class="tilt" src="images/why-choose-us/car1.svg" alt="Car">
-                </div>
-                <div class="column">
-                    <img class="tilt" src="images/why-choose-us/car3.svg" alt="Car">
-                    <img class="tilt" src="images/why-choose-us/car2.svg" alt="Car">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / Why Choose Us Section -->
+  </div>
+  <!-- /Header Section -->
 
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p>Providing expert driving lessons to help you gain confidence and master the road.</p>
-    
-            <div class="services-container">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="image-wrapper">
-                        <img src="images/services/icon1.png" alt="icon1">
-                    </div>
-                    <h3>60 MINUTES</h3>
-                    <div class="price">$38</div>
-                    <p>Learn the basics of how cars work and how to drive them safely.</p>
-                </div>
-    
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="image-wrapper">
-                        <img src="images/services/icon2.png" alt="icon2">
-                    </div>
-                    <h3>90 MINUTES</h3>
-                    <div class="price">$57</div>
-                    <p>Advanced skills for confident driving and expert-level car care.</p>
-                </div>
-    
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="image-wrapper">
-                        <img src="images/services/icon3.png" alt="icon3">
-                    </div>
-                    <h3>9 HOURS</h3>
-                    <div class="price">$342</div>
-                    <p>Pro training for mastering advanced driving techniques and car handling.</p>
-                </div>
-    
-                <!-- Service 4 -->
-                <div class="service-card">
-                    <div class="image-wrapper">
-                        <img src="images/services/icon4.png" alt="icon4">
-                    </div>
-                    <h3>60 MINUTES</h3>
-                    <div class="price">$40</div>
-                    <p>Mock test to assess your driving skills and knowledge.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / Services Section -->
-    <!-- Testimonials Section -->
-    <div class="testimonial">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p>See what our happy students say about their driving journey with us!</p>    
-        </div>
-        <div class="container">
-            <div class="testimonial-section">
-                <div class="swiper testimonial-slider">
-                    <div class="swiper-wrapper">
-                        <!-- Testimonial 1 -->
-                        <div class="swiper-slide testimonial-item">
-                            <p class="testimonial-text">
-                                 I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challange of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result.Thank you!
-                            </p>
-                            <div class="testimonial-info">
-                                <img src="images/user.png" alt="User 1">
-                                <h3>Guilherme Chaves</h3>
-                            </div>
-                        </div>
-                        <!-- Testimonial 2 -->
-                        <div class="swiper-slide testimonial-item">
-                            <p class="testimonial-text">
-                                 I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challange of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result.Thank you!
-                            </p>                            <div class="testimonial-info">
-                                <img src="images/user.png" alt="User 2">
-                                <h3>Jane Smith</h3>
-                            </div>
-                        </div>
-                        <!-- Testimonial 3 -->
-                        <div class="swiper-slide testimonial-item">
-                            <p class="testimonial-text">
-                                 I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challange of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result.Thank you!
-                            </p>                            <div class="testimonial-info">
-                                <img src="images/user.png" alt="User 3">
-                                <h3>Michael Johnson</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                </div>
-                <div class="swiper-control">
-                    <i class="fa-solid fa-caret-left next"></i>
-                    <i class="fa-solid fa-caret-right prev"></i>
-                </div>
-            </div>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <div class="hero-text" data-aos="fade-right">
+        <h1>Drive with Confidence with <span>Me & You</span> Driving School!</h1>
+        <p>
+          Offering tailored driving lessons with a Government Approved Driving Instructor, 
+          whether you need intensive courses or flexible ‘pay-as-you-go’ sessions to prepare for your test with ease.
+        </p>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <img src="images/hero.svg" alt="Me & You Driving School">
+      </div>
     </div>
-    <!-- / Testimonials Section -->
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>For more information about our services and products or to submit a complaint, please contact us by filling out the following form.</p>
-                    <div class="info-item"><i class="fas fa-phone-alt"></i> 07957943555</div>
-                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> 16 Dunster Ct, Furzton, Milton Keynes MK4 1DG, United Kingdom</div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form action="#">
-                        <div class="input-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" placeholder="+44 XXX XXXX">
-                            </div>
-                            <div class="input-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Enter your email">
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label for="description">Description</label>
-                            <textarea id="description" rows="4" placeholder="Enter description..."></textarea>
-                        </div>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox"> Inquiry</label>
-                            <label><input type="checkbox"> Suggestion</label>
-                            <label><input type="checkbox"> Complaint</label>
-                        </div>
-                        <button type="submit" class="submit-btn">Send</button>
-                    </form>
-                </div>
-    
+  </section>
+  <!-- /Hero Section -->
+
+  <!-- About Section -->
+  <section class="about" data-aos="fade-up">
+    <div class="container">
+      <div class="about-image" data-aos="zoom-in">
+        <img src="images/about.svg" alt="About Me & You Driving School">
+      </div>
+      <div class="about-text" data-aos="fade-up">
+        <h2>About <span>Us</span></h2>
+        <p>
+          Me & You Driving School offers both intensive and semi-intensive driving lessons in Milton Keynes 
+          and the surrounding areas with a Government Approved Driving Instructor (ADI).
+        </p>
+        <p>
+          I offer a range of driving courses and driving lesson packages to suit your individual needs at 
+          highly competitive prices. Alternatively, you can also book driving lessons in Milton Keynes on a 
+          ‘pay as you go’ basis, especially if you only need a few lessons before your driving test.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- /About Section -->
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us" data-aos="fade-up">
+    <div class="container">
+      <div class="why-text" data-aos="fade-right">
+        <h2>Why Choose Us</h2>
+        <p class="intro">Trusted service, proven results, and unmatched expertise tailored to meet your needs.</p>
+        <div class="why-items-group">
+          <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="image-wrapper">
+              <img src="images/why-choose-us/icon3.png" alt="Icon">
             </div>
+            <div>
+              <h3>Student-Centred Learning</h3>
+              <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was.</p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="image-wrapper">
+              <img src="images/why-choose-us/icon2.png" alt="Icon">
+            </div>
+            <div>
+              <h3>Approved Driving Instructor Lessons</h3>
+              <p>As one of the few Government Approved Driving Instructors in Milton Keynes, you can be assured that your driving lessons with me will be both thorough and enjoyable.</p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <img src="images/why-choose-us/icon1.png" alt="Icon">
+            </div>
+            <div>
+              <h3>Flexibility</h3>
+              <p>Unlike most other driving schools in Milton Keynes, I work around my pupils’ schedules in order to offer lessons at a time most convenient to them.</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- / Contact Section -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-column">
-                <img src="images/logo.png" alt="Me & You Driving School Logo" class="logo">
-                <p class="description">
-                    Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis enim cursus vulputate amet. Lobortis mi platea aliquam senectus tempus mauris neque.
-                </p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#testimonial">Testimonial</a></li>
-                    <li><a href="index.html#contact">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Social Media</h3>
-                <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Instagram Feed</h3>
-                <div class="images-group">
-                    <img src="images/footer/1.png" alt="Instagram post 1">
-                    <img src="images/footer/2.png" alt="Instagram post 2">
-                    <img src="images/footer/3.png" alt="Instagram post 3">
-                    <img src="images/footer/4.png" alt="Instagram post 4">
-                    <img src="images/footer/5.png" alt="Instagram post 5">
-                    <img src="images/footer/6.png" alt="Instagram post 6">
-                    <img src="images/footer/7.png" alt="Instagram post 7">
-                    <img src="images/footer/8.png" alt="Instagram post 8">
-                    <img src="images/footer/9.png" alt="Instagram post 9">
-                </div>
-            </div>
+      </div>
+      <div class="why-gallery" data-aos="fade-left">
+        <div class="column">
+          <img class="tilt" src="images/why-choose-us/car1.svg" alt="Car">
         </div>
-        <div class="copyright">© 2025 Me and You Driving School in Milton Keynes. All Rights Reserved.</div>
-    </footer>
-    <!-- / Footer -->
+        <div class="column">
+          <img class="tilt" src="images/why-choose-us/car3.svg" alt="Car">
+          <img class="tilt" src="images/why-choose-us/car2.svg" alt="Car">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Why Choose Us Section -->
 
-    <!-- ========== Utility Components ========== -->
-    <!-- Scroll to Top Button -->
-    <!-- <i class="fa-solid fa-arrow-up scroll-to-top"></i> -->
-    <!-- /Scroll to Top Button -->
-    <!-- ========== /Utility Components ========== -->
+  <!-- Services Section -->
+  <section class="services-section" data-aos="fade-up">
+    <div class="container">
+      <h2 data-aos="fade-up">Our Services</h2>
+      <p data-aos="fade-up">Providing expert driving lessons to help you gain confidence and master the road.</p>
+      <div class="services-container">
+        <div class="service-card" data-aos="flip-left">
+          <div class="image-wrapper">
+            <img src="images/services/icon1.png" alt="icon1">
+          </div>
+          <h3>60 MINUTES</h3>
+          <div class="price">$38</div>
+          <p>Learn the basics of how cars work and how to drive them safely.</p>
+        </div>
+        <div class="service-card" data-aos="flip-right">
+          <div class="image-wrapper">
+            <img src="images/services/icon2.png" alt="icon2">
+          </div>
+          <h3>90 MINUTES</h3>
+          <div class="price">$57</div>
+          <p>Advanced skills for confident driving and expert-level car care.</p>
+        </div>
+        <div class="service-card" data-aos="flip-left">
+          <div class="image-wrapper">
+            <img src="images/services/icon3.png" alt="icon3">
+          </div>
+          <h3>9 HOURS</h3>
+          <div class="price">$342</div>
+          <p>Pro training for mastering advanced driving techniques and car handling.</p>
+        </div>
+        <div class="service-card" data-aos="flip-right">
+          <div class="image-wrapper">
+            <img src="images/services/icon4.png" alt="icon4">
+          </div>
+          <h3>60 MINUTES</h3>
+          <div class="price">$40</div>
+          <p>Mock test to assess your driving skills and knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Services Section -->
 
-    <!-- JS Libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/intlTelInput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Testimonials Section -->
+  <div class="testimonial" data-aos="fade-up">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <p>See what our happy students say about their driving journey with us!</p>
+    </div>
+    <div class="container">
+      <div class="testimonial-section">
+        <div class="swiper testimonial-slider" data-aos="zoom-in">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial-item">
+              <p class="testimonial-text">
+                I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challenge of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result. Thank you!
+              </p>
+              <div class="testimonial-info" data-aos="fade-up">
+                <img src="images/user.png" alt="User 1">
+                <h3>Guilherme Chaves</h3>
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-item">
+              <p class="testimonial-text">
+                I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challenge of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result. Thank you!
+              </p>
+              <div class="testimonial-info" data-aos="fade-up">
+                <img src="images/user.png" alt="User 2">
+                <h3>Jane Smith</h3>
+              </div>
+            </div>
+            <div class="swiper-slide testimonial-item">
+              <p class="testimonial-text">
+                I drove for 14 years in Brazil and I have always considered myself a safe driver; however, I've acquired some terrible habits with time and struggled a bit to adapt to a "learner's safe driving ways" here in the UK. Thankfully I had an amazing (and strict) instructor with a keen attention to details that took the challenge of polishing my bad habits and making me feel ready to take my driving test. I'm very proud and happy with the result. Thank you!
+              </p>
+              <div class="testimonial-info" data-aos="fade-up">
+                <img src="images/user.png" alt="User 3">
+                <h3>Michael Johnson</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-control" data-aos="fade-up">
+          <i class="fa-solid fa-caret-left next"></i>
+          <i class="fa-solid fa-caret-right prev"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Testimonials Section -->
 
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".tilt"), {
-            max: 25,
-            speed: 1000,
-            glare: true,
-            "max-glare": 0.5
-        });
-        var swiper = new Swiper(".testimonial-slider", {
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".next",
-                prevEl: ".prev",
-            },
-        });
-        document.addEventListener("DOMContentLoaded", function() {
-            const phoneInput = document.querySelector("#phone");
-            const iti = window.intlTelInput(phoneInput, {
-                initialCountry: "gb",
-                preferredCountries: ["gb"], 
-                excludeCountries: ['IL'],
-                separateDialCode: true, 
-                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/utils.js"
-            });
-        });
-    </script>
-    <script src="js/main.js"></script>
+  <!-- Contact Section -->
+  <section class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info" data-aos="fade-right">
+          <h2>Contact Us</h2>
+          <p>For more information about our services and products or to submit a complaint, please contact us by filling out the following form.</p>
+          <div class="info-item"><i class="fas fa-phone-alt"></i> 07957943555</div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i> 16 Dunster Ct, Furzton, Milton Keynes MK4 1DG, United Kingdom</div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+          <form action="#">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+44 XXX XXXX">
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="description">Description</label>
+              <textarea id="description" rows="4" placeholder="Enter description..."></textarea>
+            </div>
+            <div class="checkbox-group">
+              <label><input type="checkbox"> Inquiry</label>
+              <label><input type="checkbox"> Suggestion</label>
+              <label><input type="checkbox"> Complaint</label>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Contact Section -->
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <div class="container">
+      <div class="footer-column" data-aos="fade-right">
+        <img src="images/logo.png" alt="Me & You Driving School Logo" class="logo">
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis enim cursus vulputate amet. Lobortis mi platea aliquam senectus tempus mauris neque.
+        </p>
+      </div>
+      <div class="footer-column" data-aos="fade-up">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#testimonial">Testimonial</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column" data-aos="fade-up">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="privacy-policy.html">privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column" data-aos="fade-up">
+        <h3>Social Media</h3>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+          <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="footer-column" data-aos="fade-up">
+        <h3>Instagram Feed</h3>
+        <div class="images-group">
+          <img class="glightbox" src="images/footer/1.png" alt="Instagram post 1">
+          <img class="glightbox" src="images/footer/2.png" alt="Instagram post 2">
+          <img class="glightbox" src="images/footer/3.png" alt="Instagram post 3">
+          <img class="glightbox" src="images/footer/4.png" alt="Instagram post 4">
+          <img class="glightbox" src="images/footer/5.png" alt="Instagram post 5">
+          <img class="glightbox" src="images/footer/6.png" alt="Instagram post 6">
+          <img class="glightbox" src="images/footer/7.png" alt="Instagram post 7">
+          <img class="glightbox" src="images/footer/8.png" alt="Instagram post 8">
+          <img class="glightbox" src="images/footer/9.png" alt="Instagram post 9">
+        </div>
+      </div>
+    </div>
+    <div class="copyright" data-aos="fade-up">
+      © 2025 Me and You Driving School in Milton Keynes. All Rights Reserved.
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- ========== Utility Components ========== -->
+  <!-- Scroll to Top Button -->
+  <i class="fa-solid fa-arrow-up scroll-to-top" data-aos="fade-up"></i>
+  <!-- /Scroll to Top Button -->
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/intlTelInput.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        once: true, // Run animations only once
+        duration: 1000, // Animation duration
+        easing: "ease-in-out", // Animation easing
+        disable: function () {
+          return window.innerWidth < 576; // Disable animations on small screens
+        }
+      });
+    });
+      VanillaTilt.init(document.querySelectorAll(".tilt"), {
+          max: 25,
+          speed: 1000,
+          glare: true,
+          "max-glare": 0.5
+      });
+
+      var swiper = new Swiper(".testimonial-slider", {
+          loop: true,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          navigation: {
+              nextEl: ".next",
+              prevEl: ".prev",
+          },
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+          const phoneInput = document.querySelector("#phone");
+          const iti = window.intlTelInput(phoneInput, {
+              initialCountry: "gb",
+              preferredCountries: ["gb"],
+              excludeCountries: ['IL'],
+              separateDialCode: true,
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/utils.js"
+          });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+          const lightbox = GLightbox({
+              selector: ".glightbox"
+          });
+      });
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
