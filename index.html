@@ -67,7 +67,7 @@
   <!-- /Hero Section -->
 
   <!-- About Section -->
-  <section class="about" data-aos="fade-up">
+  <section class="about" id="about" data-aos="fade-up">
     <div class="container">
       <div class="about-image" data-aos="zoom-in">
         <img src="images/about.svg" alt="About Me & You Driving School">
@@ -138,7 +138,7 @@
   <!-- /Why Choose Us Section -->
 
   <!-- Services Section -->
-  <section class="services-section" data-aos="fade-up">
+  <section class="services-section" id="services" data-aos="fade-up">
     <div class="container">
       <h2 data-aos="fade-up">Our Services</h2>
       <p data-aos="fade-up">Providing expert driving lessons to help you gain confidence and master the road.</p>
@@ -181,7 +181,7 @@
   <!-- /Services Section -->
 
   <!-- Testimonials Section -->
-  <div class="testimonial" data-aos="fade-up">
+  <div class="testimonial" id="testimonial" data-aos="fade-up">
     <div class="container">
       <h2>Testimonials</h2>
       <p>See what our happy students say about their driving journey with us!</p>
@@ -229,7 +229,7 @@
   <!-- /Testimonials Section -->
 
   <!-- Contact Section -->
-  <section class="contact-section" data-aos="fade-up">
+  <section class="contact-section" id="contact" data-aos="fade-up">
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-info" data-aos="fade-right">
@@ -348,53 +348,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        once: true, // Run animations only once
-        duration: 1000, // Animation duration
-        easing: "ease-in-out", // Animation easing
-        disable: function () {
-          return window.innerWidth < 576; // Disable animations on small screens
-        }
-      });
-    });
-      VanillaTilt.init(document.querySelectorAll(".tilt"), {
-          max: 25,
-          speed: 1000,
-          glare: true,
-          "max-glare": 0.5
-      });
-
-      var swiper = new Swiper(".testimonial-slider", {
-          loop: true,
-          pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-          },
-          navigation: {
-              nextEl: ".next",
-              prevEl: ".prev",
-          },
-      });
-
-      document.addEventListener("DOMContentLoaded", function() {
-          const phoneInput = document.querySelector("#phone");
-          const iti = window.intlTelInput(phoneInput, {
-              initialCountry: "gb",
-              preferredCountries: ["gb"],
-              excludeCountries: ['IL'],
-              separateDialCode: true,
-              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/utils.js"
-          });
-      });
-
-      document.addEventListener("DOMContentLoaded", function() {
-          const lightbox = GLightbox({
-              selector: ".glightbox"
-          });
-      });
-  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

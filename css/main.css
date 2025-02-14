@@ -3,21 +3,19 @@
 Project: Me & You Driving School  
 Author: Heba Skhail  
 Description: Main stylesheet for the website  
-Last Updated: 
 ------------------------------------------------
 
 Table of Contents:
 ------------------------------------------------
 1.  General Layout Styles  
 2.  Header  
-3.  Landing Section  
+3.  Hero Section  
 4.  About Us Section  
 5.  Why Choose Us Section  
 6.  Our Services Section  
 7.  Testimonials Section  
 8.  Contact Us Section  
 9.  Footer  
-10. Responsive Fixes  
 ------------------------------------------------
 */
 
@@ -70,10 +68,10 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 /* ========================================================= */
 /* Scroll to Top Button Component */
 /* ========================================================= */
-
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -110,12 +108,10 @@ ul {
     transition: transform 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s;
 }
 
-/* Hover Effect */
 .scroll-to-top:hover {
     opacity: 0.8;
 }
 
-/* Bounce In Animation */
 @keyframes bounceIn {
     0% {
         transform: translateY(20px);
@@ -149,9 +145,8 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* 1. Header */
+/* 2. Header */
 /* ------------------------------------------------ */
-
 .header {
     min-height: 100px;
     font-weight: 400;
@@ -178,7 +173,6 @@ ul {
     transition: width 0.3s ease; 
 }
 
-/* Menu Overlay */
 .menu-overlay {
     position: fixed;
     inset: 0;
@@ -282,7 +276,6 @@ ul {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Large Screens (Desktops) - min-width: 1200px */
 @media (min-width: 1200px) {
     .container {
@@ -353,16 +346,16 @@ ul {
     .header .btn-show-nav {
         display: block;
     }
+
+    .header .container {
+        justify-content: space-between;
+    }
 }
 
 /* Small Screens (Tablets & Phones) - max-width: 768px */
 @media (max-width: 768px) {
     .header .logo img {
         width: 55px;
-    }
-
-    .header .container {
-        justify-content: space-between;
     }
 
     .header {
@@ -386,7 +379,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Hero Section */
+/* 3. Hero Section */
 /* ------------------------------------------------ */
 .hero {
     position: relative;
@@ -451,7 +444,6 @@ ul {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Large Screens (Desktops) - min-width: 1200px */
 @media (min-width: 1200px) {
     .hero .container .hero-image {
@@ -530,7 +522,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* About Section */
+/* 4. About Section */
 /* ------------------------------------------------ */
 .about {
     padding: 80px 0;
@@ -590,7 +582,6 @@ ul {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Medium Screens (Tablets & Laptops) - max-width: 1024px */
 @media (max-width: 1024px) {
     .about {
@@ -618,16 +609,16 @@ ul {
         text-align: center;
     }
 
-    .about .container .about-text {
-        text-align: center;
-    }
-
     .about .container .about-text h2 {
         font-size: 2rem;
     }
 
     .about .container .about-text p {
         font-size: 1rem;
+    }
+
+    .about .container .about-text h2::after {
+        top: 35px;
     }
 }
 
@@ -643,7 +634,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Why Choose Us Section */
+/* 5. Why Choose Us Section */
 /* ------------------------------------------------ */
 .why-choose-us {
     padding: 80px 0;
@@ -759,7 +750,6 @@ ul {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Large Screens (Desktops) - min-width: 1200px */
 @media (max-width: 1199px) {
     .why-choose-us .why-gallery .column:last-child img:last-child {
@@ -806,7 +796,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Testimonials Section */
+/* 6. Testimonials Section */
 /* ------------------------------------------------*/
 .testimonial {
     padding: 80px 0;
@@ -916,7 +906,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Services Section */
+/* 7. Services Section */
 /* ------------------------------------------------*/
 .services-section {
     background-image: url('../images/services.svg');
@@ -1020,6 +1010,7 @@ ul {
     margin: 6px 0 0 0;
 }
 
+/* ==================== Media Queries ==================== */
 /* Small Screens (Tablets & Phones) - max-width: 768px */
 @media (max-width: 768px) {
     .services-section .container .services-container {
@@ -1028,7 +1019,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Contact Us Section */
+/* 8. Contact Us Section */
 /* ------------------------------------------------*/
 .contact-section {
     margin: 80px 0 20px;
@@ -1277,7 +1268,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Footer Section */
+/* 9. Footer Section */
 /* ------------------------------------------------ */
 footer {
     background: #f8f8f8;
@@ -1317,16 +1308,14 @@ footer .container {
     flex-wrap: wrap;
 }
 
-/* ===== Footer Columns ===== */
 footer .footer-column {
     flex: 1;
     min-width: 200px;
     text-align: left;
 }
 
-/* جعل العمود الأول أكبر قليلاً */
 footer .footer-column:first-child {
-    flex: 1.5; /* يجعل العمود الأول يأخذ مساحة أكبر */
+    flex: 1.5;
 }
 
 footer .footer-column h3 {
@@ -1354,7 +1343,6 @@ footer .footer-column ul li a:hover {
     color: #000;
 }
 
-/* ===== Social Media Section ===== */
 footer .social-links li {
     display: flex;
     align-items: center;
@@ -1383,13 +1371,12 @@ footer .social-links li a:hover i {
     transform: scale(1.2);
 }
 
-/* ===== Instagram Feed ===== */
 footer .images-group {
     display: grid;
-    grid-template-columns: repeat(3, auto); /* تقليل التباعد */
-    gap: 3px; /* تصغير المسافة بين الصور */
-    place-items: center; /* محاذاة الصور في المنتصف */
-    grid-auto-flow: dense; /* تقليل الفراغات الزائدة */
+    grid-template-columns: repeat(3, auto); 
+    gap: 3px; 
+    place-items: center; 
+    grid-auto-flow: dense; 
     width: 15%;
 }
 
@@ -1407,13 +1394,11 @@ footer .images-group img:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Logo Styling ===== */
 footer .logo {
     width: 100px;
     margin-bottom: 15px;
 }
 
-/* ===== Footer Copyright Section ===== */
 footer .copyright {
     text-align: center;
     padding-top: 20px;
@@ -1424,7 +1409,6 @@ footer .copyright {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Small Tablets & Large Phones - max-width: 768px */
 @media (max-width: 768px) {
     footer .container {
@@ -1435,3 +1419,4 @@ footer .copyright {
         flex: none;
     }
 }
+

@@ -3,21 +3,14 @@
 Project: Me & You Driving School  
 Author: Heba Skhail  
 Description: Main stylesheet for the website  
-Last Updated: 
 ------------------------------------------------
 
 Table of Contents:
 ------------------------------------------------
 1.  General Layout Styles  
 2.  Header  
-3.  Landing Section  
-4.  About Us Section  
-5.  Why Choose Us Section  
-6.  Our Services Section  
-7.  Testimonials Section  
-8.  Contact Us Section  
-9.  Footer  
-10. Responsive Fixes  
+3.  Hero Section  
+4.  Footer  
 ------------------------------------------------
 */
 
@@ -149,12 +142,8 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* 1. Header */
+/* 2. Header */
 /* ------------------------------------------------ */
-/* ------------------------------------------------ */
-/* 1. Header */
-/* ------------------------------------------------ */
-
 .header {
     min-height: 100px;
     font-weight: 400;
@@ -181,7 +170,6 @@ ul {
     transition: width 0.3s ease; 
 }
 
-/* Menu Overlay */
 .menu-overlay {
     position: fixed;
     inset: 0;
@@ -285,7 +273,6 @@ ul {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Large Screens (Desktops) - min-width: 1200px */
 @media (min-width: 1200px) {
     .container {
@@ -356,16 +343,16 @@ ul {
     .header .btn-show-nav {
         display: block;
     }
+    
+    .header .container {
+        justify-content: space-between;
+    }
 }
 
 /* Small Screens (Tablets & Phones) - max-width: 768px */
 @media (max-width: 768px) {
     .header .logo img {
         width: 55px;
-    }
-
-    .header .container {
-        justify-content: space-between;
     }
 
     .header {
@@ -389,7 +376,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Hero Section */
+/* 2. Hero Section */
 /* ------------------------------------------------ */
 .hero {
     margin-top: 100px;
@@ -421,6 +408,7 @@ ul {
 @media (max-width: 768px) {
     .hero {
         height: 200px;
+        margin-top: 60px;
     }
 
     .hero h1 {
@@ -433,7 +421,7 @@ ul {
 }
 
 /* ------------------------------------------------ */
-/* Footer Section */
+/* 4. Footer Section */
 /* ------------------------------------------------ */
 footer {
     background: #f8f8f8;
@@ -473,16 +461,15 @@ footer .container {
     flex-wrap: wrap;
 }
 
-/* ===== Footer Columns ===== */
 footer .footer-column {
     flex: 1;
     min-width: 200px;
     text-align: left;
 }
 
-/* جعل العمود الأول أكبر قليلاً */
+
 footer .footer-column:first-child {
-    flex: 1.5; /* يجعل العمود الأول يأخذ مساحة أكبر */
+    flex: 1.5; 
 }
 
 footer .footer-column h3 {
@@ -510,7 +497,6 @@ footer .footer-column ul li a:hover {
     color: #000;
 }
 
-/* ===== Social Media Section ===== */
 footer .social-links li {
     display: flex;
     align-items: center;
@@ -539,13 +525,12 @@ footer .social-links li a:hover i {
     transform: scale(1.2);
 }
 
-/* ===== Instagram Feed ===== */
 footer .images-group {
     display: grid;
-    grid-template-columns: repeat(3, auto); /* تقليل التباعد */
-    gap: 3px; /* تصغير المسافة بين الصور */
-    place-items: center; /* محاذاة الصور في المنتصف */
-    grid-auto-flow: dense; /* تقليل الفراغات الزائدة */
+    grid-template-columns: repeat(3, auto); 
+    gap: 3px; 
+    place-items: center; 
+    grid-auto-flow: dense; 
     width: 15%;
 }
 
@@ -563,13 +548,11 @@ footer .images-group img:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Logo Styling ===== */
 footer .logo {
     width: 120px;
     margin-bottom: 15px;
 }
 
-/* ===== Footer Copyright Section ===== */
 footer .copyright {
     text-align: center;
     padding-top: 20px;
@@ -580,7 +563,6 @@ footer .copyright {
 }
 
 /* ==================== Media Queries ==================== */
-
 /* Small Tablets & Large Phones - max-width: 768px */
 @media (max-width: 768px) {
     footer .container {
