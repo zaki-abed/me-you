@@ -103,17 +103,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* 4. Initialize AOS */
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth >= 576) {
-        AOS.init({
-            once: true,
-            duration: 1000,
-            easing: "ease-in-out",
-            disable: function () {
-                return window.innerWidth < 576;
-            }
-        });
-    }
+    AOS.init({
+        once: true, 
+        duration: 1000, 
+        easing: "ease-in-out", 
+        disable: function () {
+            return window.innerWidth < 576;
+        }
+    });
 });
+
 
 /* 5. Initialize VanillaTilt */
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -156,3 +155,4 @@ document.addEventListener("DOMContentLoaded", function () {
         selector: ".glightbox"
     });
 });
+
