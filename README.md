@@ -8,4 +8,4 @@ Check out the live demo of the landing page: [Link](https://test-me-and-you.netl
 ## Screenshots
 **Landing Page**
 
-![Screenshot 1](image/Home.png)
+![Screenshot 1](images/Home.png)
