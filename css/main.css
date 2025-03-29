@@ -157,7 +157,7 @@ ul {
     display: flex;
     align-items: center;
     position: fixed;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, min-height 0.3s ease;
+    transition: 0.3s !important;
     border-bottom: 1px solid rgba(180, 177, 177, 0.2);
     background-color: transparent;
 }
