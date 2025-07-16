@@ -10,7 +10,7 @@
 ## 📸 Screenshots
 
 ### 🏠 Landing Page
-![Screenshot 1](image/home.png)
+![Screenshot 1](images/Home.png)
 
 ---
 
